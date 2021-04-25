@@ -182,9 +182,9 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:your@email.com"
+    a-email = "interstella.ranger2020@gmail.com"
     g-github = "https://github.com/Gary-Hertel"
-    i-zhihu = "http://localhost:1313"
+    i-zhihu = "https://www.zhihu.com/people/ji-ji-wu-ming-87-64"
     o-bilibili = "https://space.bilibili.com/1685893587?from=search&seid=12227181337188388623"
 
 # See https://gohugo.io/about/hugo-and-gdpr/
