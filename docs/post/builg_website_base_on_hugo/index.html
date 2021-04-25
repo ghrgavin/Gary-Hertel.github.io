@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>基于hugo搭建个人站点 - 哲学喵量化 - Philosophy cat quantify</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Gary-Hertel" /><meta name="description" content="1.为什么使用hugo？ 以前使用wordpress搭建网站，插件太多，完善起来比较费时费力。现在，静态博客也很受欢迎，hugo就是GO语言开" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.81.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/builg_website_base_on_hugo/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.af7fd1da18d66c2b017df5b4cae508ef44cfcac3fb4c7c7a327fe4f4f9e28b08.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="基于hugo搭建个人站点" />
+<meta property="og:description" content="1.为什么使用hugo？ 以前使用wordpress搭建网站，插件太多，完善起来比较费时费力。现在，静态博客也很受欢迎，hugo就是GO语言开" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/builg_website_base_on_hugo/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-04-26T04:09:23&#43;08:00" />
+<meta property="article:modified_time" content="2021-04-26T04:09:23&#43;08:00" />
+
+<meta itemprop="name" content="基于hugo搭建个人站点">
+<meta itemprop="description" content="1.为什么使用hugo？ 以前使用wordpress搭建网站，插件太多，完善起来比较费时费力。现在，静态博客也很受欢迎，hugo就是GO语言开"><meta itemprop="datePublished" content="2021-04-26T04:09:23&#43;08:00" />
+<meta itemprop="dateModified" content="2021-04-26T04:09:23&#43;08:00" />
+<meta itemprop="wordCount" content="1338">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="基于hugo搭建个人站点"/>
+<meta name="twitter:description" content="1.为什么使用hugo？ 以前使用wordpress搭建网站，插件太多，完善起来比较费时费力。现在，静态博客也很受欢迎，hugo就是GO语言开"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">哲学喵量化</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">文章</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">哲学喵量化</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">文章</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">基于hugo搭建个人站点</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-04-26 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#1为什么使用hugo">1.为什么使用hugo？</a></li>
+            <li><a href="#2安装hugo">2.安装hugo</a></li>
+            <li><a href="#3创建站点">3.创建站点</a></li>
+          </ul>
+        </li>
+        <li><a href="#installation">Installation</a>
+          <ul>
+            <li><a href="#4增加文章">4.增加文章</a></li>
+            <li><a href="#5查看站点">5.查看站点</a></li>
+            <li><a href="#6生成静态页面">6.生成静态页面</a></li>
+            <li><a href="#7部署到github">7.部署到github</a></li>
+            <li><a href="#8总结">8.总结</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h3 id="1为什么使用hugo">1.为什么使用hugo？</h3>
+<p>以前使用wordpress搭建网站，插件太多，完善起来比较费时费力。现在，静态博客也很受欢迎，hugo就是GO语言开发的一个静态博客生成器。</p>
+<h3 id="2安装hugo">2.安装hugo</h3>
+<p>mackbook上直接使用<code>brew install hugo</code>安装hugo，安装完成后使用<code>hugo version</code>来查看hugo的版本。</p>
+<h3 id="3创建站点">3.创建站点</h3>
+<p>在Github目录下打开终端，或者cd到Github目录下：</p>
+<p><code>hugo new site site_name</code></p>
+<p>其中，si te_name为github账号名称加上<code>.github.io</code>，例如：</p>
+<p><code>hugo new site gary-hertel.github.io</code></p>
+<p>创建成功后会显示一些信息，诸如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">Congratulations! Your new Hugo site is created...
+Just a few more steps and you<span class="err">&#39;</span>re ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/ or
+   create your own with the <span class="s2">&#34;hugo new theme &lt;THEMENAME&gt;&#34;</span> command.
+2. Perhaps you want to add some content. You can add single files
+   with <span class="s2">&#34;hugo new &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&#34;</span>.
+3. Start the built-in live server via <span class="s2">&#34;hugo server&#34;</span>.
+
+Visit https://gohugo.io/ <span class="k">for</span> quickstart guide and full documentation.
+</code></pre></td></tr></table>
+</div>
+</div><p>这就表示站点已经创建成功了。</p>
+<p>然后进入到站点目录：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> gary-hertel.github.io
+</code></pre></td></tr></table>
+</div>
+</div><p>使用<code>tree</code>查看目录结构如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">.
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+
+<span class="m">6</span> directories, <span class="m">2</span> files
+</code></pre></td></tr></table>
+</div>
+</div><p>接下来需要为我们的网站指定一个主题，这里我们选择<code>even</code>这个主题:</p>
+<p><code>git clone https://github.com/olOwOlo/hugo-theme-even themes/even</code></p>
+<p>将该主题增加到网站的配置文件中，这样才能生效：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">&#39;theme = &#34;even&#34;&#39;</span> &gt;&gt; config.toml
+</code></pre></td></tr></table>
+</div>
+</div><p>测试下是否成功，运行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ hugo serve
+</code></pre></td></tr></table>
+</div>
+</div><p>这里是按照别的教程操作的，但是发生了报错，查看even这个主题的文档后发现有如下内容：</p>
+<blockquote>
+<h2 id="installation">Installation</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Important:</strong> Take a look inside the <a href="https://github.com/olOwOlo/hugo-theme-even/tree/master/exampleSite"><code>exampleSite</code></a> folder of this theme. You’ll find a file called <a href="https://github.com/olOwOlo/hugo-theme-even/blob/master/exampleSite/config.toml"><code>config.toml</code></a>. <strong>To use it, copy the <a href="https://github.com/olOwOlo/hugo-theme-even/blob/master/exampleSite/config.toml"><code>config.toml</code></a> in the root folder of your Hugo site.</strong> Feel free to change it.</p>
+<p><strong>Important:</strong> This theme uses <a href="https://gohugo.io/hugo-pipes/introduction/">Hugo Pipes</a>. Modifying contents in <code>assets</code> requires the extended version to be installed.</p>
+<p><strong>NOTE:</strong> For this theme, you should use <strong>post</strong> instead of <strong>posts</strong>, namely <code>hugo new post/some-content.md</code>.</p>
+</blockquote>
+<p>这里提示我们查看<code>themes/even/exampleSite</code>目录下有一个示例的<code>config</code>配置文件，我们需要将这个文件复制到站点根目录，覆盖原文件，这样才能够使站点生效。配置文件中的信息可以查看一下，然后进行相应的修改。</p>
+<h3 id="4增加文章">4.增加文章</h3>
+<p>在站点根目录：</p>
+<p><code>hugo new post/first_article.md</code></p>
+<p>查看<code>gary-hertel.github.io/content/post</code>目录下新增了一个<code>first_article.md</code>的markdown文档，打开之后对其进行编辑即可，注意将<code>draft:true</code>修改为<code>false</code>.</p>
+<p>撰写文章的方法就是通常开发者常用的markdown格式。</p>
+<h3 id="5查看站点">5.查看站点</h3>
+<p>在站点根目录下：</p>
+<p><code>Hugo serve</code></p>
+<p>然后就可以在浏览器中输入<code>http://127.0.0.1:1313/</code>进行查看了，在撰写文章或者进行配置修改等等操作时，内容会自动更新。</p>
+<h3 id="6生成静态页面">6.生成静态页面</h3>
+<p><code>hugo -d docs</code></p>
+<p>静态页面会保存至站点根目录下的docs文件夹。</p>
+<p>每次更新后我们都需要执行一下这条命令。</p>
+<h3 id="7部署到github">7.部署到github</h3>
+<p>在github上新建一个公开仓库，名为github用户名加上<code>.github.io</code>，例如<code>gary-hertel.github.io</code></p>
+<p>在仓库的settings的pages设置中，Source那里设置为：</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gpwno5ivpyj31ap0u0dv6.jpg" alt=""></p>
+<p>说明如下：</p>
+<ul>
+<li>数据源默认使用主分支下的根目录，建议改为 docs 目录；</li>
+<li>自定义域名如果留空，则默认仓库名就是你的域名，比如我这里的 gary-hertel.github.io；</li>
+<li>如果配置了自定义域名，启用 HTTPS 需要等待一段时间才能生效；</li>
+</ul>
+<h3 id="8总结">8.总结</h3>
+<p>使用hugo搭建个个人博客还是不错的，一开始要花些时间折腾和摸索，后续就使用起来比较方便了，也不需要购买服务器去部署，部署在github上可能国内访问较慢，可以考虑部署到gitee.</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Gary-Hertel</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-04-26
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/test/">
+            <span class="next-text nav-default">一个示例策略</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:interstella.ranger2020@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/Gary-Hertel" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/ji-ji-wu-ming-87-64" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://space.bilibili.com/1685893587?from=search&amp;seid=12227181337188388623" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>Gary-Hertel</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

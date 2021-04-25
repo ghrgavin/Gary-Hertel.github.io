@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 哲学喵量化 - Philosophy cat quantify</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Apr 2021 03:49:20 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Apr 2021 04:09:23 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于hugo搭建个人站点</title>
+      <link>http://localhost:1313/post/builg_website_base_on_hugo/</link>
+      <pubDate>Mon, 26 Apr 2021 04:09:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/builg_website_base_on_hugo/</guid>
+      <description>1.为什么使用hugo？ 以前使用wordpress搭建网站，插件太多，完善起来比较费时费力。现在，静态博客也很受欢迎，hugo就是GO语言开</description>
+    </item>
+    
     <item>
       <title>一个示例策略</title>
       <link>http://localhost:1313/post/test/</link>
